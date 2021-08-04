@@ -1,13 +1,13 @@
 //
-//  mapViewController.swift
-//  mapViewController
+//  turtleViewController.swift
+//  turtleViewController
 //
-//  Created by CTechMBP20E on 8/3/21.
+//  Created by CTechMBP20E on 8/4/21.
 //
 
 import UIKit
 
-class mapViewController: UIViewController {
+class turtleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,11 +15,7 @@ class mapViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func aquaticButtonTapped(_ sender: Any) {
-    }
-    @IBAction func mammalsButtonTapped(_ sender: Any) {
-    }
-    
+
     /*
     // MARK: - Navigation
 

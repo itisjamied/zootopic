@@ -17,6 +17,14 @@
 		6E77F8DC26B9BECD00C1CD57 /* zootopicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E77F8DB26B9BECD00C1CD57 /* zootopicTests.swift */; };
 		6E77F8E626B9BECD00C1CD57 /* zootopicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E77F8E526B9BECD00C1CD57 /* zootopicUITests.swift */; };
 		6E77F8F526B9C8F400C1CD57 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E77F8F426B9C8F400C1CD57 /* mapViewController.swift */; };
+		6ED2E55326BA21AF00158F5E /* MammalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2E55226BA21AF00158F5E /* MammalsViewController.swift */; };
+		6ED2E55526BA21E800158F5E /* AquaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2E55426BA21E800158F5E /* AquaticViewController.swift */; };
+		6ED2E55726BA470A00158F5E /* reptilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2E55626BA470A00158F5E /* reptilesViewController.swift */; };
+		6ED2E55926BA471F00158F5E /* insectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2E55826BA471F00158F5E /* insectsViewController.swift */; };
+		6ED2E55B26BA473A00158F5E /* extinctViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2E55A26BA473A00158F5E /* extinctViewController.swift */; };
+		6ED2E55D26BA474D00158F5E /* birdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2E55C26BA474D00158F5E /* birdsViewController.swift */; };
+		6ED2E55F26BA59B900158F5E /* seahorseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2E55E26BA59B900158F5E /* seahorseViewController.swift */; };
+		6ED2E56126BA5A6000158F5E /* turtleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2E56026BA5A6000158F5E /* turtleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		6E77F8E126B9BECD00C1CD57 /* zootopicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zootopicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E77F8E526B9BECD00C1CD57 /* zootopicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zootopicUITests.swift; sourceTree = "<group>"; };
 		6E77F8F426B9C8F400C1CD57 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		6ED2E55226BA21AF00158F5E /* MammalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MammalsViewController.swift; sourceTree = "<group>"; };
+		6ED2E55426BA21E800158F5E /* AquaticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaticViewController.swift; sourceTree = "<group>"; };
+		6ED2E55626BA470A00158F5E /* reptilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reptilesViewController.swift; sourceTree = "<group>"; };
+		6ED2E55826BA471F00158F5E /* insectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insectsViewController.swift; sourceTree = "<group>"; };
+		6ED2E55A26BA473A00158F5E /* extinctViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extinctViewController.swift; sourceTree = "<group>"; };
+		6ED2E55C26BA474D00158F5E /* birdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = birdsViewController.swift; sourceTree = "<group>"; };
+		6ED2E55E26BA59B900158F5E /* seahorseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seahorseViewController.swift; sourceTree = "<group>"; };
+		6ED2E56026BA5A6000158F5E /* turtleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = turtleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +121,19 @@
 				6E77F8C326B9BECB00C1CD57 /* SceneDelegate.swift */,
 				6E77F8C526B9BECB00C1CD57 /* ViewController.swift */,
 				6E77F8C726B9BECB00C1CD57 /* Main.storyboard */,
+				6ED2E56026BA5A6000158F5E /* turtleViewController.swift */,
+				6ED2E55E26BA59B900158F5E /* seahorseViewController.swift */,
+				6ED2E55C26BA474D00158F5E /* birdsViewController.swift */,
+				6ED2E55A26BA473A00158F5E /* extinctViewController.swift */,
+				6ED2E55826BA471F00158F5E /* insectsViewController.swift */,
+				6ED2E55626BA470A00158F5E /* reptilesViewController.swift */,
+				6ED2E55426BA21E800158F5E /* AquaticViewController.swift */,
 				6E77F8F426B9C8F400C1CD57 /* mapViewController.swift */,
 				6E77F8CD26B9BECD00C1CD57 /* Assets.xcassets */,
 				6E77F8CF26B9BECD00C1CD57 /* LaunchScreen.storyboard */,
 				6E77F8D226B9BECD00C1CD57 /* Info.plist */,
 				6E77F8CA26B9BECB00C1CD57 /* zootopic.xcdatamodeld */,
+				6ED2E55226BA21AF00158F5E /* MammalsViewController.swift */,
 			);
 			path = zootopic;
 			sourceTree = "<group>";
@@ -261,11 +285,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED2E55F26BA59B900158F5E /* seahorseViewController.swift in Sources */,
 				6E77F8CC26B9BECB00C1CD57 /* zootopic.xcdatamodeld in Sources */,
+				6ED2E55526BA21E800158F5E /* AquaticViewController.swift in Sources */,
+				6ED2E55B26BA473A00158F5E /* extinctViewController.swift in Sources */,
 				6E77F8F526B9C8F400C1CD57 /* mapViewController.swift in Sources */,
 				6E77F8C626B9BECB00C1CD57 /* ViewController.swift in Sources */,
 				6E77F8C226B9BECB00C1CD57 /* AppDelegate.swift in Sources */,
 				6E77F8C426B9BECB00C1CD57 /* SceneDelegate.swift in Sources */,
+				6ED2E55D26BA474D00158F5E /* birdsViewController.swift in Sources */,
+				6ED2E55726BA470A00158F5E /* reptilesViewController.swift in Sources */,
+				6ED2E55326BA21AF00158F5E /* MammalsViewController.swift in Sources */,
+				6ED2E56126BA5A6000158F5E /* turtleViewController.swift in Sources */,
+				6ED2E55926BA471F00158F5E /* insectsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

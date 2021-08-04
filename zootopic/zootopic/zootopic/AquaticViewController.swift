@@ -1,13 +1,13 @@
 //
-//  mapViewController.swift
-//  mapViewController
+//  AquaticViewController.swift
+//  AquaticViewController
 //
 //  Created by CTechMBP20E on 8/3/21.
 //
 
 import UIKit
 
-class mapViewController: UIViewController {
+class AquaticViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,9 +15,7 @@ class mapViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func aquaticButtonTapped(_ sender: Any) {
-    }
-    @IBAction func mammalsButtonTapped(_ sender: Any) {
+    @IBAction func seahorseButtonTapped(_ sender: Any) {
     }
     
     /*

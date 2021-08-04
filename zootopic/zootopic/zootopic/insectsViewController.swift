@@ -1,13 +1,13 @@
 //
-//  mapViewController.swift
-//  mapViewController
+//  insectsViewController.swift
+//  insectsViewController
 //
 //  Created by CTechMBP20E on 8/3/21.
 //
 
 import UIKit
 
-class mapViewController: UIViewController {
+class insectsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,11 +15,7 @@ class mapViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func aquaticButtonTapped(_ sender: Any) {
-    }
-    @IBAction func mammalsButtonTapped(_ sender: Any) {
-    }
-    
+
     /*
     // MARK: - Navigation
 
