@@ -15,6 +15,16 @@ class reptilesViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func frogButtonTapped(_ sender: Any) {
+    }
+    @IBAction func snakeButtonTapped(_ sender: Any) {
+    }
+
+    @IBAction func chamelionButtonTapped(_ sender: Any) {
+    }
+    
+    
+    
 
     /*
     // MARK: - Navigation

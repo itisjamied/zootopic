@@ -15,7 +15,9 @@ class insectsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func beeButtonTapped(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

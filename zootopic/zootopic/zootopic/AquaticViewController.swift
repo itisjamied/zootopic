@@ -17,6 +17,23 @@ class AquaticViewController: UIViewController {
     
     @IBAction func seahorseButtonTapped(_ sender: Any) {
     }
+    @IBAction func squidButtonTapped(_ sender: Any) {
+    }
+    @IBAction func sharkButtonTapped(_ sender: Any) {
+    }
+    @IBAction func jellyfishButtonTapped(_ sender: Any) {
+    }
+    @IBAction func crabButtonTapped(_ sender: Any) {
+    }
+    @IBAction func turtleButtonTapped(_ sender: Any) {
+    }
+    @IBAction func doplhinButtonTapped(_ sender: Any) {
+    }
+    @IBAction func whaleButtonTapped(_ sender: Any) {
+    }
+    @IBAction func fishButtonTapped(_ sender: Any) {
+    }
+    
     
     /*
     // MARK: - Navigation

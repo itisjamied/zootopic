@@ -27,6 +27,13 @@
                                     <segue destination="4nQ-uM-rAV" kind="presentation" modalPresentationStyle="fullScreen" id="BpS-84-sI3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ZOOPTOPIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agH-ZV-MdV">
+                                <rect key="frame" x="160" y="341" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -142,6 +149,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="reptilesButtonTapped:" destination="4nQ-uM-rAV" eventType="touchUpInside" id="57f-2Z-bSV"/>
                                     <segue destination="SzZ-kN-2tj" kind="presentation" modalPresentationStyle="fullScreen" id="PGs-9g-MS3"/>
                                 </connections>
                             </button>
@@ -151,6 +159,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="insectsButtonTapped:" destination="4nQ-uM-rAV" eventType="touchUpInside" id="YQr-H8-YNi"/>
                                     <segue destination="e82-Pc-vZs" kind="presentation" modalPresentationStyle="fullScreen" id="9ic-o5-Igy"/>
                                 </connections>
                             </button>
@@ -159,6 +168,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="extinctButtonTapped:" destination="4nQ-uM-rAV" eventType="touchUpInside" id="6SQ-3t-KDU"/>
+                                    <segue destination="gaP-bi-XVZ" kind="presentation" modalPresentationStyle="fullScreen" id="jpY-M8-hMj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdb-I8-9k5">
                                 <rect key="frame" x="79" y="665" width="75" height="97"/>
@@ -166,6 +179,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="birdsButtonTapped:" destination="4nQ-uM-rAV" eventType="touchUpInside" id="Won-ZX-XDL"/>
                                     <segue destination="qMy-Zt-uNn" kind="presentation" modalPresentationStyle="fullScreen" id="qAr-BS-s0S"/>
                                 </connections>
                             </button>
@@ -212,30 +226,23 @@
                                 <imageReference key="image" image="chameleon"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffT-fH-vn2">
-                                <rect key="frame" x="114" y="337" width="56" height="35"/>
+                                <rect key="frame" x="88" y="213" width="92" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="frog"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="frogButtonTapped:" destination="SzZ-kN-2tj" eventType="touchUpInside" id="fqw-5l-8Va"/>
                                     <segue destination="4ao-jH-61B" kind="show" id="UaP-FG-kBa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7Q-se-YaM">
-                                <rect key="frame" x="249" y="516" width="69" height="35"/>
+                                <rect key="frame" x="223" y="393" width="137" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="snake"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="snakeButtonTapped:" destination="SzZ-kN-2tj" eventType="touchUpInside" id="iYS-e3-PjB"/>
                                     <segue destination="dOe-Jr-BNl" kind="show" id="qha-9f-0FP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bD-vC-jMp">
-                                <rect key="frame" x="95" y="708" width="93" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="camelion"/>
-                                <connections>
-                                    <segue destination="tJL-bA-ISP" kind="show" id="sju-FK-acm"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g0W-SP-7g7">
@@ -243,6 +250,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="snake"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bD-vC-jMp">
+                                <rect key="frame" x="75" y="593" width="155" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="chamelionButtonTapped:" destination="SzZ-kN-2tj" eventType="touchUpInside" id="xu1-Cl-Ahe"/>
+                                    <segue destination="tJL-bA-ISP" kind="show" id="8bY-xm-ISk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Yj-YL-ksB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -326,7 +343,7 @@
                                 <imageReference key="image" image="jellyfish"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xbw-CB-x59">
-                                <rect key="frame" x="49" y="270" width="118" height="83"/>
+                                <rect key="frame" x="36" y="267" width="118" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="shark"/>
                             </imageView>
@@ -346,89 +363,97 @@
                                 <imageReference key="image" image="seahorse"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQO-1m-yB7">
-                                <rect key="frame" x="255" y="712" width="118" height="83"/>
+                                <rect key="frame" x="256" y="714" width="118" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="whale"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qja-mt-H3q">
-                                <rect key="frame" x="66" y="539" width="59" height="35"/>
+                                <rect key="frame" x="39" y="445" width="115" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="crab"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="crabButtonTapped:" destination="fg9-jL-6DN" eventType="touchUpInside" id="WPB-eo-fIa"/>
                                     <segue destination="R8Z-1W-O9g" kind="show" id="9KG-3S-7s1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sO4-VC-Uwr">
-                                <rect key="frame" x="268" y="577" width="65" height="35"/>
+                                <rect key="frame" x="256" y="523" width="76" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="turtle"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="turtleButtonTapped:" destination="fg9-jL-6DN" eventType="touchUpInside" id="SZk-Xx-XdK"/>
                                     <segue destination="dqu-zN-LQC" kind="show" id="Io7-uF-bIe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKx-4m-vPa">
-                                <rect key="frame" x="269" y="162" width="94" height="86"/>
+                                <rect key="frame" x="265" y="96" width="94" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="seahorse"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
                                     <action selector="seahorseButtonTapped:" destination="fg9-jL-6DN" eventType="touchUpInside" id="1q8-ur-tTo"/>
                                     <segue destination="EYz-aY-tMU" kind="show" id="7kj-t7-Nhk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2o-ha-tHj">
-                                <rect key="frame" x="76" y="344" width="66" height="35"/>
+                                <rect key="frame" x="49" y="276" width="86" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="shark"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="sharkButtonTapped:" destination="fg9-jL-6DN" eventType="touchUpInside" id="ESH-ti-mx2"/>
                                     <segue destination="dar-NJ-Qsw" kind="show" id="Q9p-D6-aoG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sa-pg-sBi">
-                                <rect key="frame" x="235" y="417" width="82" height="35"/>
+                                <rect key="frame" x="238" y="333" width="76" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="jellyfish"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="jellyfishButtonTapped:" destination="fg9-jL-6DN" eventType="touchUpInside" id="bpu-6g-iNy"/>
                                     <segue destination="j6S-ag-buD" kind="show" id="qqU-ku-yUv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDC-vr-8Jt">
-                                <rect key="frame" x="128" y="222" width="66" height="35"/>
+                                <rect key="frame" x="118" y="127" width="89" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="squid"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="squidButtonTapped:" destination="fg9-jL-6DN" eventType="touchUpInside" id="SVx-Ss-luK"/>
                                     <segue destination="DHO-ho-pQR" kind="show" id="cU9-IK-ug4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2k-gQ-nwZ">
-                                <rect key="frame" x="102" y="676" width="81" height="35"/>
+                                <rect key="frame" x="102" y="596" width="89" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="dolphin"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="doplhinButtonTapped:" destination="fg9-jL-6DN" eventType="touchUpInside" id="H4p-zr-ddi"/>
                                     <segue destination="mEQ-v1-iWc" kind="show" id="qcm-NV-7Qa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ey-b9-y9y">
-                                <rect key="frame" x="273" y="778" width="69" height="35"/>
+                                <rect key="frame" x="271" y="719" width="88" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="whale"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="whaleButtonTapped:" destination="fg9-jL-6DN" eventType="touchUpInside" id="BiM-Ia-a7Y"/>
                                     <segue destination="cNI-jb-Z1Q" kind="show" id="S2w-fM-u1k"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gyd-zw-PD3">
-                                <rect key="frame" x="76" y="813" width="52" height="35"/>
+                                <rect key="frame" x="67" y="763" width="90" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="fish"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="fishButtonTapped:" destination="fg9-jL-6DN" eventType="touchUpInside" id="H4E-nd-ReX"/>
                                     <segue destination="6iS-Nl-G41" kind="show" id="2lG-h1-abQ"/>
                                 </connections>
                             </button>
@@ -454,6 +479,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="seahorse"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="seahorse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2y-VN-Jer">
+                                <rect key="frame" x="172" y="57" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vuO-lb-riC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -477,6 +509,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="turtle"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="turtle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeI-9D-V2t">
+                                <rect key="frame" x="187" y="64" width="41" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PF0-vR-D9g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -500,6 +539,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="squid"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="squid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruX-Mc-HY5">
+                                <rect key="frame" x="186" y="65" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6fv-YM-41E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -558,7 +604,7 @@
                                 <imageReference key="image" image="owl"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xoh-mQ-YN9">
-                                <rect key="frame" x="27" y="704" width="150" height="110"/>
+                                <rect key="frame" x="25" y="688" width="150" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="parrot"/>
                             </imageView>
@@ -578,83 +624,92 @@
                                 <imageReference key="image" image="toucan"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D86-Yq-9WW">
-                                <rect key="frame" x="61" y="278" width="83" height="35"/>
+                                <rect key="frame" x="61" y="178" width="88" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="chicken"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="chickenButttonTapped:" destination="qMy-Zt-uNn" eventType="touchUpInside" id="Lbe-FS-1U6"/>
                                     <segue destination="8x5-rP-TVy" kind="show" id="j93-p6-PVO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7e-Nt-6Wb">
-                                <rect key="frame" x="261" y="169" width="90" height="35"/>
+                                <rect key="frame" x="233" y="56" width="93" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="flamingo"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="flamingoButtonTapped:" destination="qMy-Zt-uNn" eventType="touchUpInside" id="0BU-Jd-d4O"/>
                                     <segue destination="7bU-Ff-RID" kind="show" id="cyU-Np-uK5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4m-84-6z5">
-                                <rect key="frame" x="276" y="486" width="50" height="35"/>
+                                <rect key="frame" x="257" y="363" width="90" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="owl"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="owlButtonTapped:" destination="qMy-Zt-uNn" eventType="touchUpInside" id="2za-NE-dUk"/>
                                     <segue destination="6pn-y8-4XZ" kind="show" id="hOg-UU-koa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOs-LD-IoQ">
-                                <rect key="frame" x="222" y="638" width="77" height="35"/>
+                                <rect key="frame" x="213" y="511" width="93" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="toucan"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="toucanButtonTapped:" destination="qMy-Zt-uNn" eventType="touchUpInside" id="z4s-cr-IsM"/>
                                     <segue destination="ia1-BD-O3H" kind="show" id="ef2-wx-fw9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ga-qh-Gqs">
-                                <rect key="frame" x="86" y="638" width="64" height="35"/>
+                                <rect key="frame" x="64" y="523" width="113" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="swan"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="swanButtonTapped:" destination="qMy-Zt-uNn" eventType="touchUpInside" id="VNB-xt-Xil"/>
                                     <segue destination="1q6-6a-13O" kind="show" id="Jms-KA-HlY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3c-Cp-NIH">
-                                <rect key="frame" x="67" y="470" width="77" height="35"/>
+                                <rect key="frame" x="53" y="355" width="83" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="ostrich"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="ostrichButtonTapped:" destination="qMy-Zt-uNn" eventType="touchUpInside" id="pdR-az-zut"/>
                                     <segue destination="4Ef-9u-2gR" kind="show" id="u7M-KK-QkN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUZ-Sh-jLW">
-                                <rect key="frame" x="64" y="811" width="71" height="35"/>
+                                <rect key="frame" x="40" y="690" width="114" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="parrot"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="parrotButtonTapped:" destination="qMy-Zt-uNn" eventType="touchUpInside" id="dgb-ov-eQX"/>
                                     <segue destination="rAf-rv-uuc" kind="show" id="wAI-wF-kEI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mub-IZ-pb5">
-                                <rect key="frame" x="270" y="822" width="86" height="35"/>
+                                <rect key="frame" x="284" y="725" width="89" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="penguin"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="penguinButtonTapped:" destination="qMy-Zt-uNn" eventType="touchUpInside" id="rDy-lD-5vy"/>
                                     <segue destination="zdF-5v-9ye" kind="show" id="KNf-ok-dqe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv2-hV-70R">
-                                <rect key="frame" x="233" y="324" width="54" height="35"/>
+                                <rect key="frame" x="199" y="203" width="90" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="kiwi"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="kiwiButtonTapped:" destination="qMy-Zt-uNn" eventType="touchUpInside" id="lYn-cV-dkv"/>
                                     <segue destination="n4q-ZU-ftF" kind="show" id="kEq-yC-lJz"/>
                                 </connections>
                             </button>
@@ -665,7 +720,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hs0-6s-AYm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1358" y="2350"/>
+            <point key="canvasLocation" x="1357.9710144927537" y="2349.7767857142858"/>
         </scene>
         <!--Mammals View Controller-->
         <scene sceneID="HUr-0T-D03">
@@ -735,84 +790,93 @@
                                 <imageReference key="image" image="sheep"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Db8-hc-eL2">
-                                <rect key="frame" x="65" y="253" width="71" height="35"/>
+                                <rect key="frame" x="53" y="173" width="99" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="sheep"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="sheepButtonTapped:" destination="rM7-iX-Rlg" eventType="touchUpInside" id="diq-At-Oyx"/>
                                     <segue destination="fHe-69-xS0" kind="show" id="MRx-E7-TFI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agu-sO-sUk">
-                                <rect key="frame" x="160" y="342" width="87" height="35"/>
+                                <rect key="frame" x="185" y="223" width="75" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="meerkat"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="meerkatButtonTapped:" destination="rM7-iX-Rlg" eventType="touchUpInside" id="1Op-KD-DIc"/>
                                     <segue destination="gfV-sD-QLX" kind="show" id="t30-yX-Cyg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FC1-bK-eS2">
-                                <rect key="frame" x="72" y="470" width="76" height="35"/>
+                                <rect key="frame" x="61" y="380" width="79" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="moose"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="mooseButtonTapped:" destination="rM7-iX-Rlg" eventType="touchUpInside" id="QlE-tv-J1f"/>
                                     <segue destination="TGe-bs-stc" kind="show" id="eM3-7V-Via"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1o-dJ-fr6">
-                                <rect key="frame" x="96" y="623" width="64" height="35"/>
+                                <rect key="frame" x="95" y="547" width="82" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="llama"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="llamaButtonTapped:" destination="rM7-iX-Rlg" eventType="touchUpInside" id="9C5-y8-m86"/>
                                     <segue destination="nAd-Ol-d9R" kind="show" id="kbP-Pd-IZk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neG-oh-j0N">
-                                <rect key="frame" x="276" y="624" width="51" height="35"/>
+                                <rect key="frame" x="247" y="560" width="87" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="lion"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="lionButttonTapped:" destination="rM7-iX-Rlg" eventType="touchUpInside" id="oO2-U6-J2O"/>
                                     <segue destination="4xL-23-tOk" kind="show" id="m6r-jr-wr1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLI-7s-8hg">
-                                <rect key="frame" x="283" y="829" width="74" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="giraffe"/>
-                                <connections>
-                                    <segue destination="drW-mL-GvQ" kind="show" id="hrq-4K-P3Z"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfi-QO-Lie">
-                                <rect key="frame" x="271" y="195" width="72" height="35"/>
+                                <rect key="frame" x="258" y="109" width="88" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="panda"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="pandaButtonTapped:" destination="rM7-iX-Rlg" eventType="touchUpInside" id="Rv2-Tq-Rak"/>
                                     <segue destination="mtf-wd-MfE" kind="showDetail" id="OUJ-o6-9e1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLn-e3-dq0">
-                                <rect key="frame" x="235" y="466" width="84" height="35"/>
+                                <rect key="frame" x="247" y="399" width="87" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="monkey"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="monkeyButtonTapped:" destination="rM7-iX-Rlg" eventType="touchUpInside" id="wFc-IV-WLF"/>
                                     <segue destination="HAK-wC-lI3" kind="show" id="LLq-tS-nNW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojB-zr-NLp">
-                                <rect key="frame" x="73" y="799" width="91" height="35"/>
+                                <rect key="frame" x="71" y="714" width="95" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="elephant"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="elephantButtonTapped:" destination="rM7-iX-Rlg" eventType="touchUpInside" id="iN9-ix-qi1"/>
                                     <segue destination="0Er-gA-wKB" kind="show" id="CDI-6A-Tpc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLI-7s-8hg">
+                                <rect key="frame" x="270" y="745" width="59" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="giraffeButtonTapped:" destination="rM7-iX-Rlg" eventType="touchUpInside" id="Q8e-GK-SkU"/>
+                                    <segue destination="drW-mL-GvQ" kind="show" id="hrq-4K-P3Z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -846,20 +910,21 @@
                                     <segue destination="4nQ-uM-rAV" kind="presentation" modalPresentationStyle="fullScreen" id="f78-kN-0bv"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fax-as-HsF">
-                                <rect key="frame" x="79" y="182" width="165" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <imageReference key="image" image="bee"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qW-Me-KXS">
-                                <rect key="frame" x="133" y="286" width="53" height="35"/>
+                                <rect key="frame" x="104" y="184" width="129" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="bee"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="beeButtonTapped:" destination="e82-Pc-vZs" eventType="touchUpInside" id="W5K-Nd-vaH"/>
                                     <segue destination="fCJ-y1-M6P" kind="show" id="uNi-A4-mf3"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fax-as-HsF">
+                                <rect key="frame" x="82" y="196" width="165" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="image" image="bee"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WP7-Ei-qtR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -882,6 +947,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="whale"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="whale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaF-uT-HQX">
+                                <rect key="frame" x="185" y="61" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rzF-ZP-DPt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -905,6 +977,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="dolphin"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dolphin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8o6-m9-Bvf">
+                                <rect key="frame" x="179" y="51" width="57" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IaP-Gf-5ok"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -928,6 +1007,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="crab"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="crab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bON-tb-LSp">
+                                <rect key="frame" x="190" y="58" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iuc-C3-vaL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -951,6 +1037,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="jellyfish"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="jellyfish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBR-Zp-UHa">
+                                <rect key="frame" x="186" y="59" width="58" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uTH-Wt-1kU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -974,6 +1067,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="shark"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="shark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ek0-4V-53h">
+                                <rect key="frame" x="186" y="73" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pSd-yQ-MnK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -997,6 +1097,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="fish"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="fish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roo-hM-tt0">
+                                <rect key="frame" x="193" y="56" width="28" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HlN-bN-HBw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1015,8 +1122,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="panda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoe-bM-m4b">
+                                <rect key="frame" x="183" y="59" width="48" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rub-OE-8Um">
-                                <rect key="frame" x="79" y="130" width="237" height="198"/>
+                                <rect key="frame" x="89" y="132" width="237" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="panda-bear"/>
                             </imageView>
@@ -1043,6 +1157,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="sheep"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sheep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcj-wI-cGp">
+                                <rect key="frame" x="184" y="52" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WJv-qJ-R9o"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1061,8 +1182,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="meerkat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIt-cf-9ID">
+                                <rect key="frame" x="176" y="62" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uvr-QB-XDD">
-                                <rect key="frame" x="71" y="160" width="272" height="220"/>
+                                <rect key="frame" x="71" y="153" width="272" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="meerkat"/>
                             </imageView>
@@ -1089,6 +1217,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="lion"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAh-sI-g8n">
+                                <rect key="frame" x="194" y="46" width="27" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="82Y-0W-Cgg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1112,6 +1247,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="llama"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="llama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3n-r6-FkX">
+                                <rect key="frame" x="187" y="57" width="40" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HgO-Ce-DOk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1135,6 +1277,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="monkey"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="monkey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mV-3t-ous">
+                                <rect key="frame" x="177" y="67" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QtE-Oo-0Dk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1158,6 +1307,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="deer"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="deer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Rd-6M-ht2">
+                                <rect key="frame" x="190" y="65" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Umc-Ct-D6Y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1181,6 +1337,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="elephant"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="elephant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lf9-8l-6LS">
+                                <rect key="frame" x="174" y="51" width="67" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZXI-V8-ijJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1204,6 +1367,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="giraffe"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="girrafe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EE9-q3-qgS">
+                                <rect key="frame" x="182" y="52" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1eO-1p-tfV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1227,6 +1397,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="frog"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="frog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUS-Bk-UAn">
+                                <rect key="frame" x="191" y="54" width="32" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vAS-LH-qwp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1250,6 +1427,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="snake"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="snake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDg-BT-l4I">
+                                <rect key="frame" x="192" y="56" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fc1-GF-Pwx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1273,6 +1457,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="chameleon"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="chamelion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1D-3s-pSP">
+                                <rect key="frame" x="180" y="51" width="78" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZcO-fJ-Szr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1296,6 +1487,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="bee"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxe-64-iv8">
+                                <rect key="frame" x="193" y="58" width="29" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wj5-7J-qdN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1319,6 +1517,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="sheep"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxx-zR-m7Z">
+                                <rect key="frame" x="171" y="81" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n4v-di-oUC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1342,6 +1547,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="meerkat"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVi-hg-Rv9">
+                                <rect key="frame" x="173" y="93" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nv4-MZ-tZs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1364,6 +1576,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="monkey"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mJ-Fx-h1x">
+                                <rect key="frame" x="189" y="92" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eX0-QB-wLi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1386,6 +1605,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="deer"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2B-PB-AdQ">
+                                <rect key="frame" x="171" y="86" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CUa-S1-Xqb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1408,6 +1634,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="flamingo"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="flamingo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tud-TK-2KB">
+                                <rect key="frame" x="174" y="50" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="muU-4g-1rX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1431,6 +1664,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="hen"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="chicken" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqO-AD-IH4">
+                                <rect key="frame" x="178" y="55" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E5V-jv-YZh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1454,6 +1694,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="kiwi"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="meerkat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knZ-c4-3uR">
+                                <rect key="frame" x="176" y="70" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0nr-Ov-pxc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1477,6 +1724,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="parrot"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="parrot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm6-Lx-kBh">
+                                <rect key="frame" x="184" y="57" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qiY-en-8SQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1500,6 +1754,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="toucan"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="toucan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtr-9u-DDJ">
+                                <rect key="frame" x="181" y="53" width="53" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kM3-TO-UEm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1523,6 +1784,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="swan"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="swan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTq-Q9-Ucc">
+                                <rect key="frame" x="187" y="53" width="40" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LZN-OY-2rr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1546,6 +1814,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="ostrich"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ostrich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZ6-nu-0f9">
+                                <rect key="frame" x="181" y="58" width="53" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Gw-3A-6Hy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1569,6 +1844,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="owl"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="owl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gih-CL-hja">
+                                <rect key="frame" x="194" y="55" width="26" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jae-Kx-eQp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1592,6 +1874,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="penguin"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="penguin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5D-dc-Lk1">
+                                <rect key="frame" x="176" y="45" width="62" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mEE-H2-z0i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1604,7 +1893,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OwX-pM-OFd"/>
+        <segue reference="BpS-84-sI3"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bee" width="512" height="512"/>

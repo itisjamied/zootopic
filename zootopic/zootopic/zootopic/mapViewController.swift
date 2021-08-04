@@ -19,9 +19,16 @@ class mapViewController: UIViewController {
     }
     @IBAction func mammalsButtonTapped(_ sender: Any) {
     }
-    
+    @IBAction func reptilesButtonTapped(_ sender: Any) {
+    }
+    @IBAction func insectsButtonTapped(_ sender: Any) {
+    }
+    @IBAction func extinctButtonTapped(_ sender: Any) {
+    }
+    @IBAction func birdsButtonTapped(_ sender: Any) {
+    }
     /*
-    // MARK: - Navigation
+     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
