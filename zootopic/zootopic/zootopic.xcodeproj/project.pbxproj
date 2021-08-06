@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6E0FBA8826BB6C1900316402 /* aquaticQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0FBA8726BB6C1900316402 /* aquaticQuizViewController.swift */; };
+		6E0FBA8A26BC3CFC00316402 /* aquaticScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0FBA8926BC3CFC00316402 /* aquaticScoreViewController.swift */; };
 		6E77F8C226B9BECB00C1CD57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E77F8C126B9BECB00C1CD57 /* AppDelegate.swift */; };
 		6E77F8C426B9BECB00C1CD57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E77F8C326B9BECB00C1CD57 /* SceneDelegate.swift */; };
 		6E77F8C626B9BECB00C1CD57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E77F8C526B9BECB00C1CD57 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		6E0FBA8726BB6C1900316402 /* aquaticQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aquaticQuizViewController.swift; sourceTree = "<group>"; };
+		6E0FBA8926BC3CFC00316402 /* aquaticScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aquaticScoreViewController.swift; sourceTree = "<group>"; };
 		6E77F8BE26B9BECB00C1CD57 /* zootopic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zootopic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E77F8C126B9BECB00C1CD57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E77F8C326B9BECB00C1CD57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				6E77F8C326B9BECB00C1CD57 /* SceneDelegate.swift */,
 				6E77F8C526B9BECB00C1CD57 /* ViewController.swift */,
 				6E77F8C726B9BECB00C1CD57 /* Main.storyboard */,
+				6E0FBA8926BC3CFC00316402 /* aquaticScoreViewController.swift */,
 				6E0FBA8726BB6C1900316402 /* aquaticQuizViewController.swift */,
 				6ED2E55C26BA474D00158F5E /* birdsViewController.swift */,
 				6ED2E55A26BA473A00158F5E /* extinctViewController.swift */,
@@ -293,6 +296,7 @@
 				6ED2E55D26BA474D00158F5E /* birdsViewController.swift in Sources */,
 				6ED2E55726BA470A00158F5E /* reptilesViewController.swift in Sources */,
 				6ED2E55326BA21AF00158F5E /* MammalsViewController.swift in Sources */,
+				6E0FBA8A26BC3CFC00316402 /* aquaticScoreViewController.swift in Sources */,
 				6ED2E55926BA471F00158F5E /* insectsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
